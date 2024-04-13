@@ -1,10 +1,9 @@
 <!-- login.component.html -->
-
 <div class="login">
   <form class="custom-form" method="post">
     <h1>Login</h1>
     <input
-      type="text"
+      type="email"
       [(ngModel)]="email"
       name="email"
       placeholder="Email"
@@ -17,8 +16,9 @@
       placeholder="Password"
       required="required"
     />
-    <button type="submit" (click)="login()">Log in</button>
+    <button type="submit" (click)="login()">Log in</button><br>
+
+    <button  (click)="openRegisterPage()">Register</button>
   </form>
-  <app-register></app-register>
 </div>
 
